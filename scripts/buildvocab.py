@@ -111,7 +111,7 @@ def create_dictionary(name, lim=0):
 
     vocab_count = combined_counter.most_common(lim - 4)
     total_counts = sum(combined_counter.values())
-    print 100.0 * sum([count for word, count in vocab_count]) / total_counts
+    print (100.0 * sum([count for word, count in vocab_count]) / total_counts)
 
     vocab = {"<unk>": 0, "<pad>": 1, "<sos>": 2, "<eos>": 3}
 
