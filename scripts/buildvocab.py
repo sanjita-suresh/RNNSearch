@@ -1,7 +1,7 @@
 # buildvocab.py
 
 import argparse
-import cPickle
+import Pickle
 import operator
 from collections import Counter
 
