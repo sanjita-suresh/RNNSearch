@@ -160,7 +160,7 @@ def buildvocab(args):
 
     if args.limit != 0:
         vocab = vocab[:args.limit]
-        print "coverage: ", coverage(vocab, counts) * 100, "%"
+        print ("coverage: ", coverage(vocab, counts) * 100, "%")
 
     if args.alpha:
         n = len(tokens)
