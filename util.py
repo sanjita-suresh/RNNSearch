@@ -1,4 +1,4 @@
-import cPickle
+import pickle
 
 import torch
 
@@ -40,7 +40,7 @@ def invert_vocab(vocab):
 
 def load_vocab(path):
     f = open(path, 'rb')
-    vocab = cPickle.load(f)
+    vocab = pickle.load(f)
     f.close()
     return vocab
 
