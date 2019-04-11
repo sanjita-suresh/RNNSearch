@@ -175,7 +175,7 @@ if __name__ == "__main__":
     if args.groundhog:
         vocab = create_dictionary(args.corpus, args.limit)
         fd = open(args.output, "wb")
-        cPickle.dump(vocab, fd, cPickle.HIGHEST_PROTOCOL)
+        pickle.dump(vocab, fd, pickle.HIGHEST_PROTOCOL)
         fd.close()
     else:
         buildvocab(args)
